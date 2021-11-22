@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test" : "cross-env NODE_OPTIONS=--max-old-space-size=8192 npm start",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/raisedadead/github-actions-secrets-test#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0"
   }
 }

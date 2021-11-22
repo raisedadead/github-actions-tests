@@ -1,4 +1,4 @@
-name: test
+name: Test
 
 on:
   push:
@@ -24,9 +24,9 @@ jobs:
         run: |
           npm ci
       
-      - name: Start
+      - name: Test
         env:
           HELLO_WORLD: 'Hello from GitHub Actions in Open'
           HELLO_SECRET: '${{ secrets.HELLO_SECRET_IN_DASHBOARD }}'
         run: |
-          npm start
+          npm test
