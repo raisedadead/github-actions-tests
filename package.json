@@ -1,0 +1,24 @@
+{
+  "name": "github-actions-secrets-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisedadead/github-actions-secrets-test.git"
+  },
+  "keywords": [],
+  "author": "Mrugesh Mohapatra <noreply@mrugesh.dev> (https://mrugesh.dev/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raisedadead/github-actions-secrets-test/issues"
+  },
+  "homepage": "https://github.com/raisedadead/github-actions-secrets-test#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
