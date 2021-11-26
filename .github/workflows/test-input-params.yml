@@ -1,0 +1,23 @@
+name: Input Params
+
+on:
+  workflow_dispatch:
+    inputs:
+      images:
+        default: "[ubuntu, nginx]"
+        required: false
+      locations:
+        default: "[eastus, westus]"
+        required: false
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        images: ${{ github.event.inputs.images }}
+        locations: ${{ github.event.inputs.locations }}
+    steps:
+      - run: |
+
+          echo ${{ matrix.images }} ${{ matrix.locations }}
